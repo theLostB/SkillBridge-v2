@@ -1,7 +1,7 @@
 
 import { FormData } from "@/components/MultiStepForm";
 
-const API_KEY = "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";
+const API_KEY = import.meta.env.VITE_OPENROUTER_API_KEY;
 const MODEL = "deepseek/deepseek-chat-v3-0324:free";
 const API_ENDPOINT = "https://openrouter.ai/api/v1/chat/completions";
 
