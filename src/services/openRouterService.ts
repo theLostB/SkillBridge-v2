@@ -5,6 +5,7 @@ const API_KEY = import.meta.env.VITE_OPENROUTER_API_KEY;
 const MODEL = "deepseek/deepseek-chat-v3-0324:free";
 const API_ENDPOINT = "https://openrouter.ai/api/v1/chat/completions";
 
+
 export const generateRoadmap = async (formData: FormData): Promise<string> => {
   const prompt = `You are a career counselor and learning expert. Based on the following information, create a comprehensive, personalized career and learning roadmap. Return ONLY the roadmap content in markdown format, no additional text or explanations.
 
